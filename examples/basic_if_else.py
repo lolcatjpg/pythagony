@@ -1,4 +1,4 @@
-"""hello world"""
+"""basic if else"""
 a = [
     (
         print,
