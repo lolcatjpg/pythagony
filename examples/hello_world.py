@@ -1,13 +1,24 @@
 """hello world!"""
-a = (
+# add parent dir to path
+import sys
+import os
+current = os.path.dirname(os.path.realpath(__file__))
+parent = os.path.dirname(current)
+sys.path.append(parent)
+
+
+import pythagony as pa
+
+
+pa.run((
     (
         print,
         print,
-		stop,
+		pa.stop,
     ),
     (
 		("hello", "world!", ),
         (f"{1 + 1 = }!", ),
 		(0, ),
 	)
-)
+))
