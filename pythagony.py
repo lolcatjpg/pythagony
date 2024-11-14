@@ -1,11 +1,19 @@
 """pythagony interpreter"""
 import sys
-from examples.hello_world import a
-
-stop = sys.exit
 
 
-i = 0
-while True:
-    a[0][i](*a[1][i])
-    i += 1
+def stop(exit_code: int) -> None:
+    """alias for sys.exit"""
+    sys.exit(exit_code)
+
+
+def run(program: tuple) -> None:
+    """run a pythagony tuple
+    
+    program[0] should be the function names, and program[1] should be 
+    the arguments to pass to the functions.
+    """
+    i = 0
+    while True:
+        program[0][i](*program[1][i])
+        i += 1
