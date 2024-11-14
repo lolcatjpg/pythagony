@@ -6,7 +6,7 @@ current = os.path.dirname(os.path.realpath(__file__))
 parent = os.path.dirname(current)
 sys.path.append(parent)
 
-import pythagony as pa
+import legacy.pythagony as pa
 
 code = (
     (
