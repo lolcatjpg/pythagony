@@ -10,31 +10,35 @@ import pythagony as pa
 
 code = (
     (
-        pa.if_else,
+        pa.run,
         print,
         None
     ),
     (
         (
-            2 + 2 == 4,  # try changing this to a false condition
             (
                 (
+                    print,
                     print,
                     None
                 ),
                 (
                     ("Hello",),
+                    ("there",),
                 )
-            ),
+            )
+            if 1 + 1 == 3 else
             (
                 (
+                    print,
                     print,
                     None
                 ),
                 (
                     ("Hi",),
+                    ("there",),
                 )
-            )
+            ),
         ),
         ("world!",),
     )

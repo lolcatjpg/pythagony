@@ -17,16 +17,3 @@ def run(program: tuple) -> None:
 
         program[0][i](*program[1][i])
         i += 1
-
-
-def if_else(conditon: bool, program_if_true: tuple, program_if_false: tuple) -> None:
-    """### if else clause
-    
-    condition: condition to check
-    program_if_true: tuple to run if the condition is `True`
-    program_if_false: tuple to run if the condition is `False`
-    """
-    if conditon:
-        run(program_if_true)
-    else:
-        run(program_if_false)
