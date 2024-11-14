@@ -1,7 +1,4 @@
 """pythagony interpreter"""
-import sys
-
-
 
 def run(program: tuple) -> None:
     """### run a pythagony tuple
