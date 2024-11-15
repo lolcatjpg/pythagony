@@ -1,12 +1,13 @@
 """variables"""
+v = {}
 a = [
     (
-        bool,
+        v.update,
         print,
         print,
     )[i](*(
-        (greeting := "hey"),
-        (greeting, "there"),
+        (0, "hey"),
+        (v[0], "there"),
         ("world",),
     )[i]) for i in range(3)
 ]
